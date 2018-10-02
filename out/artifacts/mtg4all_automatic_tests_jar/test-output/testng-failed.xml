@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Test the login functionalities]">
+  <parameter name="BROWSER" value="firefox"/>
+  <parameter name="URL" value="https://mtg4allitpeople.azurewebsites.net/"/>
+  <test thread-count="5" name="Test a logout after the user logged in(failed)">
+    <parameter name="test" value="./test/login/tc02/test.properties"/>
+    <parameter name="before" value="./test/before/login.properties"/>
+    <classes>
+      <class name="com.tandeminnovation.launcher.TestLauncher">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="generalTest" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.tandeminnovation.launcher.TestLauncher -->
+    </classes>
+  </test> <!-- Test a logout after the user logged in(failed) -->
+  <test thread-count="5" name="Test a valid login with facebook(failed)">
+    <parameter name="test" value="./test/login/tc03/test.properties"/>
+    <classes>
+      <class name="com.tandeminnovation.launcher.TestLauncher">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="generalTest" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.tandeminnovation.launcher.TestLauncher -->
+    </classes>
+  </test> <!-- Test a valid login with facebook(failed) -->
+  <test thread-count="5" name="Test a failed login with user and password(failed)">
+    <parameter name="test" value="./test/login/tc04/test.properties"/>
+    <classes>
+      <class name="com.tandeminnovation.launcher.TestLauncher">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="generalTest" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.tandeminnovation.launcher.TestLauncher -->
+    </classes>
+  </test> <!-- Test a failed login with user and password(failed) -->
+  <test thread-count="5" name="Test a login using a google account(failed)">
+    <parameter name="test" value="./test/login/tc05/test.properties"/>
+    <classes>
+      <class name="com.tandeminnovation.launcher.TestLauncher">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="generalTest" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.tandeminnovation.launcher.TestLauncher -->
+    </classes>
+  </test> <!-- Test a login using a google account(failed) -->
+</suite> <!-- Failed suite [Test the login functionalities] -->

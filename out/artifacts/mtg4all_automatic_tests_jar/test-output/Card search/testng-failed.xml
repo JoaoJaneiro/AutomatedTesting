@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Card search]">
+  <parameter name="BROWSER" value="firefox"/>
+  <parameter name="URL" value="https://mtg4allitpeople.azurewebsites.net/"/>
+  <test thread-count="5" name="Test a card search by card name(failed)">
+    <parameter name="test" value="./test/search/tc01/test.properties"/>
+    <classes>
+      <class name="com.tandeminnovation.launcher.TestLauncher">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="generalTest" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.tandeminnovation.launcher.TestLauncher -->
+    </classes>
+  </test> <!-- Test a card search by card name(failed) -->
+  <test thread-count="5" name="Test a card search by artist name(failed)">
+    <parameter name="test" value="./test/search/tc02/test.properties"/>
+    <classes>
+      <class name="com.tandeminnovation.launcher.TestLauncher">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="generalTest" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.tandeminnovation.launcher.TestLauncher -->
+    </classes>
+  </test> <!-- Test a card search by artist name(failed) -->
+  <test thread-count="5" name="Test a card search by card type(failed)">
+    <parameter name="test" value="./test/search/tc03/test.properties"/>
+    <classes>
+      <class name="com.tandeminnovation.launcher.TestLauncher">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="generalTest" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.tandeminnovation.launcher.TestLauncher -->
+    </classes>
+  </test> <!-- Test a card search by card type(failed) -->
+</suite> <!-- Failed suite [Card search] -->

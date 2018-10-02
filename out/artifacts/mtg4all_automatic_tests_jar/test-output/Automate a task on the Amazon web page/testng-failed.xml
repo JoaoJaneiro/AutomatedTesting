@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Automate a task on the Amazon web page]">
+  <parameter name="BROWSER" value="firefox"/>
+  <parameter name="URL" value="https://www.amazon.com/"/>
+  <test thread-count="5" name="Buy items on the shop cart(failed)">
+    <parameter name="test" value="./test/amazon/test.properties"/>
+    <classes>
+      <class name="com.tandeminnovation.launcher.TestLauncher">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="generalTest" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.tandeminnovation.launcher.TestLauncher -->
+    </classes>
+  </test> <!-- Buy items on the shop cart(failed) -->
+</suite> <!-- Failed suite [Automate a task on the Amazon web page] -->
